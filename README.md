@@ -33,33 +33,6 @@ The system has been trained and evaluated using the **ICDAR 2003 Robust Reading 
 - Modular architecture for future extension
 - End-to-end OCR inference pipeline
 
-## 🖼️ OCR Pipeline
-
-```text
-                 Input Image
-                      │
-                      ▼
-             YOLOv11m Detector
-                      │
-                      ▼
-        Word-level Bounding Boxes
-                      │
-                      ▼
-             Crop Text Regions
-                      │
-                      ▼
-     CRNN (ResNet34 + BiGRU + CTC)
-                      │
-                      ▼
-            Recognized Text Strings
-                      │
-                      ▼
-          FastAPI JSON Response
-                      │
-                      ▼
-             Streamlit Web UI
-```
-
 ## 🎯 Project Objectives
 
 The primary objectives of this project are:
